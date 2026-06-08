@@ -1,0 +1,17 @@
+[
+  {
+    "timestamp": 1780881503387000,
+    "id": "717d26f5-bcf7-4869-8896-f0393abcee92",
+    "event_message": "GET | 200 | https://qvnhqlchatyecvvpwkkx.supabase.co/storage/v1/bucket | lovable",
+    "log_level": "log",
+    "details": {
+      "event_message": "GET | 200 | https://qvnhqlchatyecvvpwkkx.supabase.co/storage/v1/bucket | lovable",
+      "id": "717d26f5-bcf7-4869-8896-f0393abcee92",
+      "log_level": 200,
+      "method": "GET",
+      "path": "/storage/v1/bucket",
+      "search": null,
+      "timestamp": 1780881503387000
+    }
+  }
+]

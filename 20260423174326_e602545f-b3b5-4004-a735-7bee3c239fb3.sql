@@ -1,0 +1,1 @@
+ALTER TABLE public.rls_audit_runs ADD COLUMN IF NOT EXISTS notes TEXT;
