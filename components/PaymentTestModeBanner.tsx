@@ -1,0 +1,20 @@
+'use client';
+
+export function PaymentTestModeBanner() {
+  const clientToken = process.env.NEXT_PUBLIC_PAYMENTS_CLIENT_TOKEN;
+  if (!clientToken?.startsWith("pk_test_")) return null;
+
+  return (
+    <div className="w-full bg-orange-100 border-b border-orange-300 px-4 py-2 text-center text-sm text-orange-800">
+      Os pagamentos no preview estão em modo de teste.{" "}
+      <a
+        href="https://docs.lovable.dev/features/payments#test-and-live-environments"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline font-medium"
+      >
+        Saiba mais
+      </a>
+    </div>
+  );
+}

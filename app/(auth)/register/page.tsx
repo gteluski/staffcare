@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import AuthPage from "@/components/auth/AuthPage";
 
 export const metadata = {
@@ -6,5 +7,9 @@ export const metadata = {
 };
 
 export default function RegisterPage() {
-  return <AuthPage initialMode="signup" />;
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-background">Carregando...</div>}>
+      <AuthPage initialMode="signup" />
+    </Suspense>
+  );
 }
